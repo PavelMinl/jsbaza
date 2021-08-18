@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        "use strict"
+        var a = 1, u = 1, c, d;
+        c = ++a;
+        alert(c); // 2 Префиксный инкремент сначала увеличивается значение (a) на единицу a = 2, затем идет выражение c = 2
+        d = u++;
+        alert(d); // 1 Постфиксный инкремент сначала считается выражение и получается d=1, а затем значение (b) увеличивается на 1 b=2
+        c = (2 + ++a);
+        alert(c); // 5 Префиксный инкремент сначала увеличивается значение (a) на единицу a = 3, затем идет выражение 2+3=5
+        d = (2 + u++);
+        alert(d); // 4 Постфиксный инкремент сначала считается выражение где b = 2 и получается d=4, а затем значение (b) увеличивается на 1 b=3
+        alert(a); // 3 Значение исходя из выше выражений
+        alert(u); // 3
+    </script>
+    <script>
+        "use strict"
+        let g = 2; //
+        let x = 1 + (g *= 2); // значек *= выполняет умножение и присваивает значению (a) полученное в скобках выражение, a = 4, затем 1+a и x = 5
+    </script>
+    <script>
+        "use strict"
+        let e = Number(prompt("Задайте значение А"));
+        let b = Number(prompt("Задать значение b"));
+        if (e >= 0 && b >= 0) {
+            alert(e - b);
+        } else if (e < 0 && b < 0) {
+            alert(e * b);
+        } else if (e > 0 && b < 0) {
+            alert(e + b)
+        }
+        else if (e < 0 && b > 0) {
+            alert(e + b)
+        } else {
+            alert("Необходимо ввести число!")
+        }
+
+    </script>
+    <script>
+        "use strict"
+        function addition(p, t) {
+            return p + t;
+        }
+        function subtraction(p, t) {
+            return p - t;
+        }
+        function division(p, t) {
+            return p / t;
+        }
+        function multiplication(p, t) {
+            return p * t;
+        }
+    </script> -->
+    <script>
+        "use strict"
+        function addition(o, i) {
+            return o + i;
+        }
+        function subtraction(o, i) {
+            return o - i;
+        }
+        function divisiono(o, i) {
+            return o / i;
+        }
+        function multiplication(o, i) {
+            return o * t;
+        }
+        function mathOperation(o, i, operation) {
+            switch (operation) {
+                case "+":
+                    return addition(o, i);
+                case "-":
+                    return subtraction(o, i);
+                case "/":
+                    return divisiono(o, i);
+                case "*":
+                    return multiplication(o, i);
+            }
+        }
+        let o = 1;
+        let i = o + 2;
+    </script>
+</body>
+
+</html>
