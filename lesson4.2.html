@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* ES5 */
+        /*      "use strict"
+             function Post(author, text, date) {
+                 this.author = author;
+                 this.text = text;
+                 this.date = date;
+             }
+             Post.prototype.edit = function (text) {
+                 this.text = text;
+             }
+     
+             let objct = new Post("Djon", "hello world", "december");
+             objct.edit("world");
+             console.log(objct);
+     
+             function AttachedPost(author, text, date) {
+                 Post.call(this, author, text, date);
+                 this.highlighted = false;
+             }
+     
+             AttachedPost.prototype = Object.create(Post.prototype);
+             AttachedPost.prototype.constructor = AttachedPost;
+             AttachedPost.prototype.makeTextHiglighted = function () {
+                 this.highlighted = true;
+             }
+     
+             let objct1 = new AttachedPost("Fiona", "good day", "setember")
+             objct1.makeTextHiglighted();
+             objct1.edit("free day");
+             console.log(objct1); */
+    </script>
+    <script>
+        /* ES6 */
+        class Post {
+            constructor(author, text, date) {
+                this.author = author;
+                this.text = text;
+                this.date = date;
+            }
+            edit(text) {
+                this.text = text;
+            }
+        }
+        let objct = new Post("Djon", "hello world", "december");
+        objct.edit("world");
+        console.log(objct);
+
+        class AttachedPost extends Post {
+            constructor(author, text, date) {
+                super(author, text, date);
+                this.highlighted = false;
+            }
+            makeTextHiglighted() {
+                this.highlighted = true;
+            }
+        }
+        let objct1 = new AttachedPost("Fiona", "good day", "setember")
+        objct1.makeTextHiglighted();
+        objct1.edit("free day");
+        console.log(objct1);
+    </script>
+</body>
+
+</html>
